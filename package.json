@@ -1,0 +1,24 @@
+{
+  "name": "billeteras-mcp",
+  "version": "0.1.0",
+  "description": "Servidor MCP de Billeteras y Transferencias con invariantes de negocio",
+  "type": "module",
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node build/index.js",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "inspector": "npx @modelcontextprotocol/inspector npx tsx src/index.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "latest",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
+
